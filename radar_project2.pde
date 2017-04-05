@@ -1,13 +1,3 @@
-/*   Arduino Radar Project
- *
- *   Updated version. Fits any screen resolution!
- *   Just change the values in the size() function,
- *   with your screen resolution.
- *      
- *  by Dejan Nedelkovski, 
- *  www.HowToMechatronics.com
- *  
- */
 
 import processing.serial.*; // imports library for serial communication
 import java.awt.event.KeyEvent; // imports library for reading the data from the serial port
@@ -31,7 +21,7 @@ void setup() {
  smooth();
  myPort = new Serial(this,"/dev/tty.usbmodem1411", 9600); // starts the serial communication
  myPort.bufferUntil('.'); // reads the data from the serial port up to the character '.'. So actually it reads this: angle,distance.
- orcFont = loadFont("Arial-BoldItalicMT-48.vlw");
+ orcFont = loadFont("ArialNarrow-BoldItalic-48.vlw");
 }
 
 void draw() {
